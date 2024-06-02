@@ -24,8 +24,8 @@ public class EmailService {
         String text = "Hi, I hope you have a good time! Thank you for receiving this message!";
         String subject = "Greetings!";
 
-        message.setFrom("matlab.abbaszada@gmail.com");
-        message.setTo("metleb.abbaszade@gmail.com");
+        message.setFrom("YOUR_EMAIL");
+        message.setTo("YOUR_EMAIL");
         message.setText(text);
         message.setSubject(subject);
         javaMailSender.send(message);
@@ -39,8 +39,8 @@ public class EmailService {
             MimeMessageHelper messageHelper = new MimeMessageHelper(message, true);
             String text = "Check this";
 
-            messageHelper.setFrom("matlab.abbaszada@gmail.com");
-            messageHelper.setTo("metleb.abbaszade@gmail.com");
+            messageHelper.setFrom("YOUR_EMAIL");
+            messageHelper.setTo("YOUR_EMAIL");
             messageHelper.setSubject("Gemini");
             messageHelper.setText(text);
 
@@ -64,8 +64,8 @@ public class EmailService {
         MimeMessageHelper messageHelper = new MimeMessageHelper(message, true);
         String text = "Hello!";
 
-        messageHelper.setFrom("matlab.abbaszada@gmail.com");
-        messageHelper.setTo("metleb.abbaszade@gmail.com");
+        messageHelper.setFrom("YOUR_EMAIL");
+        messageHelper.setTo("YOUR_EMAIL");
         messageHelper.setSubject("New Picture");
         messageHelper.setText(text);
 
@@ -81,8 +81,8 @@ public class EmailService {
         for (MultipartFile item : multipart) {
             String text = "Check";
 
-            messageHelper.setFrom("matlab.abbaszada@gmail.com");
-            messageHelper.setTo("metleb.abbaszade@gmail.com");
+            messageHelper.setFrom("YOUR_EMAIL");
+            messageHelper.setTo("YOUR_EMAIL");
             messageHelper.setSubject("New Picture");
             messageHelper.setText(text);
 
